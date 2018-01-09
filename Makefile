@@ -1,15 +1,15 @@
 CWD := $(shell pwd)
 
 .PHONY: all
-all: clean
+all: build
 
 .PHONY: build
-build:
+build: clean
 	@gem build *.gemspec
 	@echo ::: BUILD :::
 
 .PHONY: push
-push:
+push: build
 	@gem push *.gem
 	@echo ::: PUSH :::
 
