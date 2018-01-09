@@ -7,5 +7,10 @@ module JekyllSiteConfig
       self.site.config[name] = data
       _render_document.bind(self).()
     end
+    data
+  end
+
+  def self.get_config(name)
+    Jekyll.configuration({})[name]
   end
 end
