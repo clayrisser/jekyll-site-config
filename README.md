@@ -2,6 +2,8 @@
 
 Add custom data to Jekyll site object
 
+![](assets/jekyll-site-config.png)
+
 ## Usage
 
 ```sh
